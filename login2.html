@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+<div class="over pb0">
+    <div class="login-main">
+        <div class="arr-back-login js-login-first-show">
+            <svg viewBox="0 0 24 24" class="ic-arr-left"  xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_14_46)">
+                    <path d="M17.17 24C17.0384 24.0007 16.9079 23.9755 16.7861 23.9258C16.6642 23.876 16.5534 23.8027 16.46 23.71L8.28998 15.54C7.82435 15.0755 7.45492 14.5238 7.20286 13.9163C6.95079 13.3089 6.82104 12.6577 6.82104 12C6.82104 11.3423 6.95079 10.6911 7.20286 10.0837C7.45492 9.47622 7.82435 8.92446 8.28998 8.46001L16.46 0.290017C16.5532 0.196779 16.6639 0.122818 16.7857 0.0723577C16.9076 0.0218975 17.0381 -0.0040741 17.17 -0.0040741C17.3018 -0.0040741 17.4324 0.0218975 17.5542 0.0723577C17.6761 0.122818 17.7867 0.196779 17.88 0.290017C17.9732 0.383256 18.0472 0.493946 18.0976 0.615768C18.1481 0.737589 18.1741 0.868157 18.1741 1.00002C18.1741 1.13188 18.1481 1.26244 18.0976 1.38427C18.0472 1.50609 17.9732 1.61678 17.88 1.71002L9.70998 9.88001C9.14818 10.4425 8.83262 11.205 8.83262 12C8.83262 12.795 9.14818 13.5575 9.70998 14.12L17.88 22.29C17.9737 22.383 18.0481 22.4936 18.0989 22.6154C18.1496 22.7373 18.1758 22.868 18.1758 23C18.1758 23.132 18.1496 23.2627 18.0989 23.3846C18.0481 23.5064 17.9737 23.617 17.88 23.71C17.7865 23.8027 17.6757 23.876 17.5539 23.9258C17.4321 23.9755 17.3016 24.0007 17.17 24Z" fill="#060606"/>
+                </g>
+                <defs>
+                    <clipPath id="clip0_14_46">
+                        <rect width="24" height="24" fill="white"/>
+                    </clipPath>
+                </defs>
+            </svg>
+        </div>
+    <div class="login-logo"><img src="img/logo.png" alt=""></div>
+    <div class="login-bottom">
+        <div class="login-first js-login-first">
+            <div class="form-row"><a href="#" class="btn-def btn-def--w100 js-login-login-show">Вход</a></div>
+            <div class="form-row"><a href="#" class="btn-def btn-white btn-def--w100 js-btn-popup" data-popup="popup-pop9">Регистрация</a></div>
+            <div class="link-repass"><a class="clr2" href="#">Нужна помощь?</a></div>
+        </div><!--end login-step1 -->
+        <div class="login-login js-login-login">
+            <div class="login-form">
+                <div class="form-row">
+                    <div class="b-input"><input type="text" placeholder="Номер телефона" class="input"></div>
+                </div>
+                <div class="form-row form-row--icon">
+                    <div class="b-input"><input type="text" placeholder="Пароль" class="input"></div>
+                    <div class="input-icon">
+                        <button class="btn-glass js-btn-glass">
+                            <svg class="icon ic-glass-off">
+                                <use xlink:href="#ic-glass-off"></use>
+                            </svg>
+                            <svg class="icon ic-glass-on">
+                                <use xlink:href="#ic-glass-on"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="form-row"><a href="login.html" class="btn-def btn-def--w100">Вход</a></div>
+            <div class="link-repass"><a class="clr2" href="#">Забыл пароль?</a> <a href="#">Восстановить</a></div>
+        </div><!--end login-login -->
+    </div><!--end login-bottom-->
+    </div><!--end login-main -->
+    
+    
+    
+    <div id="popup-pop9" class="popup has-modal">
+        <div class="popup__container">
+            <div class="popup-dialog">
+                <div class="popup-content">
+                    <div class="popup-title h2-title">Регистрация</div>
+                    <div class="popup-close js-popup-close">
+                        <svg class="icon ic-close">
+                            <use xlink:href="#ic-close"></use>
+                        </svg>
+                    </div>
+                    <div class="popup-body">
+                        <div class="b-load-image">
+                            <div class="b-load-ava" style="background-image: url(img/ava.png)"></div>
+                            <div class="b-load-text">
+                                <svg viewBox="0 0 11 11" class="ic-load"  xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_131_803)">
+                                        <path d="M8.43341 3.38194C8.3505 3.35829 8.27483 3.31429 8.21327 3.25393C8.15171 3.19357 8.10623 3.11878 8.08095 3.03636C7.9406 2.56063 7.70518 2.11832 7.38895 1.7362C7.07272 1.35408 6.68224 1.04009 6.24116 0.813238C5.80008 0.586383 5.31755 0.451377 4.82278 0.41639C4.32802 0.381404 3.8313 0.447164 3.36268 0.60969C2.89406 0.772217 2.46329 1.02813 2.09643 1.36195C1.72957 1.69576 1.43426 2.10054 1.22835 2.55179C1.02245 3.00303 0.910234 3.49136 0.898506 3.98722C0.886777 4.48309 0.975776 4.97617 1.16012 5.43665C1.20246 5.53355 1.21158 5.64174 1.18605 5.74437C1.16052 5.84699 1.10177 5.9383 1.01895 6.00406C0.653991 6.27494 0.369054 6.63944 0.194294 7.05899C0.0195337 7.47854 -0.0385467 7.93754 0.0261994 8.3874C0.12724 8.99555 0.442973 9.54732 0.916091 9.94257C1.38921 10.3378 1.98835 10.5503 2.60478 10.5416H5.04174C5.1633 10.5416 5.27988 10.4933 5.36583 10.4073C5.45179 10.3214 5.50007 10.2048 5.50007 10.0832C5.50007 9.96167 5.45179 9.84509 5.36583 9.75914C5.27988 9.67319 5.1633 9.6249 5.04174 9.6249H2.60478C2.20891 9.6345 1.8227 9.50197 1.51613 9.25132C1.20957 9.00067 1.00294 8.64849 0.933699 8.25861C0.88979 7.97202 0.925377 7.67889 1.03658 7.41114C1.14779 7.14339 1.33035 6.9113 1.56437 6.74015C1.81018 6.55643 1.988 6.29626 2.06988 6.0005C2.15176 5.70475 2.13307 5.39017 2.01674 5.10619C1.78673 4.49876 1.7749 3.83029 1.98328 3.21511C2.14975 2.7332 2.44784 2.30755 2.8438 1.98636C3.23975 1.66518 3.71774 1.4613 4.22362 1.39781C4.34096 1.38271 4.45914 1.37505 4.57745 1.3749C5.1701 1.37294 5.74744 1.56301 6.22303 1.91664C6.69861 2.27028 7.04686 2.76845 7.21562 3.33656C7.28149 3.55307 7.40018 3.74978 7.561 3.909C7.72182 4.06822 7.91972 4.18494 8.13687 4.24865C8.6683 4.40582 9.13904 4.72159 9.48606 5.15368C9.83308 5.58577 10.0398 6.11356 10.0786 6.66639C10.1174 7.21923 9.98636 7.77071 9.70307 8.24702C9.41978 8.72333 8.99774 9.10173 8.49345 9.33156C8.41882 9.36978 8.35643 9.4282 8.31339 9.50016C8.27036 9.57212 8.24842 9.65473 8.25008 9.73856C8.24918 9.81441 8.26735 9.88926 8.30292 9.95625C8.33849 10.0232 8.39032 10.0802 8.45364 10.122C8.51697 10.1637 8.58976 10.1889 8.66535 10.1952C8.74094 10.2015 8.81689 10.1887 8.88624 10.1579C10.781 9.24723 11.8104 6.85152 10.2062 4.53694C9.76454 3.96078 9.13892 3.55318 8.43341 3.38194Z" />
+                                        <path d="M8.57411 7.65734C8.66003 7.57139 8.7083 7.45483 8.7083 7.3333C8.7083 7.21177 8.66003 7.09521 8.57411 7.00926L7.84719 6.28234C7.58934 6.02457 7.23967 5.87976 6.87506 5.87976C6.51046 5.87976 6.16079 6.02457 5.90294 6.28234L5.17602 7.00926C5.09253 7.0957 5.04634 7.21148 5.04738 7.33165C5.04842 7.45182 5.09663 7.56678 5.18161 7.65176C5.26658 7.73674 5.38154 7.78494 5.50171 7.78598C5.62189 7.78703 5.73766 7.74083 5.82411 7.65734L6.41673 7.06472V10.5416C6.41673 10.6632 6.46502 10.7798 6.55097 10.8657C6.63693 10.9517 6.75351 11 6.87506 11C6.99662 11 7.1132 10.9517 7.19916 10.8657C7.28511 10.7798 7.3334 10.6632 7.3334 10.5416V7.06472L7.92602 7.65734C8.01197 7.74327 8.12853 7.79154 8.25006 7.79154C8.3716 7.79154 8.48816 7.74327 8.57411 7.65734Z" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_131_803">
+                                            <rect width="11" height="11" fill="white"/>
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                                
+                                Загрузить фотографию</div>
+                            <input type="file" class="browse">
+                        </div><!--end b-load-image -->
+                        <div class="b-modal-form">
+                            <div class="b-modal-form__form">
+                                <div class="form-row">
+                                    <div class="b-input"><input type="text" placeholder="Фамилия" class="input"></div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="b-input"><input type="text" placeholder="Имя" class="input"></div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="b-input"><input type="text" placeholder="Отчество" class="input"></div>
+                                </div>
+                            </div>
+                            <div class="form-row"><a href="#" class="btn-def btn-def--w100 js-btn-popup" data-popup="popup-pop10">Продолжить</a></div>
+                        </div>
+                    
+                    </div><!--end popup-body -->
+                </div><!-- /.popup-content -->
+            </div><!-- /.popup-dialog -->
+        </div><!-- /.popup__container -->
+    </div><!-- /.popup in -->
+    <div id="popup-pop10" class="popup has-modal">
+        <div class="popup__container">
+            <div class="popup-dialog">
+                <div class="popup-content">
+                    <div class="popup-title h2-title">Регистрация</div>
+                    <div class="popup-close js-popup-close">
+                        <svg class="icon ic-close">
+                            <use xlink:href="#ic-close"></use>
+                        </svg>
+                    </div>
+                    <div class="popup-body">
+                        <div class="b-modal-form">
+                            <div class="b-modal-form__form">
+                                <div class="form-row">
+                                    <div class="b-input">
+                                        <select class="select" name="" id="">
+                                            <option value="">Выбор региона</option>
+                                            <option value="">Москва</option>
+                                            <option value="">Челябинск</option>
+                                            <option value="">Новосибирск</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="b-input-label">Номер телефона</div>
+                                    <div class="b-input"><input type="text" placeholder="+7 (999) 111-11-11" class="input"></div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="b-input-label">Электронная почта</div>
+                                    <div class="b-input"><input type="text" placeholder="example@grame.ru" class="input"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="form-row"><a href="#" class="btn-def btn-def--w100 js-btn-popup" data-popup="popup-pop11">Продолжить</a></div>
+                        </div>
+                    
+                    </div><!--end popup-body -->
+                </div><!-- /.popup-content -->
+            </div><!-- /.popup-dialog -->
+        </div><!-- /.popup__container -->
+    </div><!-- /.popup in -->
+    <div id="popup-pop11" class="popup has-modal">
+        <div class="popup__container">
+            <div class="popup-dialog">
+                <div class="popup-content">
+                    <div class="popup-title h2-title">
+                        Подтверждение
+                        <div class="desc-text-center">
+                            Для продолжения регистрации
+                            необходимо подтвердить свои данные
+                        </div>
+                    </div>
+                    <div class="popup-close js-popup-close">
+                        <svg class="icon ic-close">
+                            <use xlink:href="#ic-close"></use>
+                        </svg>
+                    </div>
+                    <div class="popup-body">
+                        
+                        <div class="b-modal-form">
+                            <div class="b-modal-form__form">
+                                <div class="form-row form-row--icon">
+                                    <div class="b-input-label">Номер телефона</div>
+                                    <div class="b-input"><input type="text" placeholder="+7 (999) 111-11-11" class="input"></div>
+                                    <div class="input-icon">
+                                        <div class="inp-checked">
+                                            <label for="id3" class="label"></label>
+                                            <input id="id3" class="inp-checked__input" type="checkbox">
+                                            <span class="inp-checked__checked"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-row form-row--icon">
+                                    <div class="b-input-label">Электронная почта</div>
+                                    <div class="b-input"><input type="text" placeholder="example@grame.ru" class="input"></div>
+                                    <div class="input-icon">
+                                        <div class="inp-checked">
+                                            <label for="id4" class="label"></label>
+                                            <input id="id4" class="inp-checked__input" type="checkbox">
+                                            <span class="inp-checked__checked"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="form-row"><a href="#" class="btn-def btn-def--w100 js-btn-popup" data-popup="popup-pop14">Продолжить</a></div>
+                        </div>
+                    
+                    </div><!--end popup-body -->
+                </div><!-- /.popup-content -->
+            </div><!-- /.popup-dialog -->
+        </div><!-- /.popup__container -->
+    </div><!-- /.popup in -->
+    <div id="popup-pop14" class="popup has-modal">
+        <div class="popup__container">
+            <div class="popup-dialog">
+                <div class="popup-content">
+                    <div class="popup-title h2-title">
+                        Придумайте пароль
+                    </div>
+                    <div class="popup-close js-popup-close">
+                        <svg class="icon ic-close">
+                            <use xlink:href="#ic-close"></use>
+                        </svg>
+                    </div>
+                    <div class="popup-body">
+                        
+                        <div class="b-modal-form">
+                            <div class="b-modal-form__form">
+                                <div class="form-row form-row--icon">
+                                    <div class="b-input"><input type="text" placeholder="Введите пароль" class="input"></div>
+                                    <div class="input-icon">
+                                        <button class="btn-glass js-btn-glass">
+                                            <svg class="icon ic-glass-off">
+                                                <use xlink:href="#ic-glass-off"></use>
+                                            </svg>
+                                            <svg class="icon ic-glass-on">
+                                                <use xlink:href="#ic-glass-on"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="form-row form-row--icon">
+                                    <div class="b-input-label">Пароль не совпадает</div>
+                                    <div class="b-input"><input type="text" placeholder="Введите пароль" class="input"></div>
+                                    <div class="input-icon">
+                                        <button class="btn-glass js-btn-glass">
+                                            <svg class="icon ic-glass-off">
+                                                <use xlink:href="#ic-glass-off"></use>
+                                            </svg>
+                                            <svg class="icon ic-glass-on">
+                                                <use xlink:href="#ic-glass-on"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div><!--end b-modal-form__form -->
+                            <div class="form-row"><a href="#" class="btn-def btn-def--w100 js-btn-popup" data-popup="popup-pop16">Продолжить</a></div>
+                        </div>
+                    </div><!--end popup-body -->
+                </div><!-- /.popup-content -->
+            </div><!-- /.popup-dialog -->
+        </div><!-- /.popup__container -->
+    </div><!-- /.popup in -->
+    <div id="popup-pop16" class="popup has-modal">
+        <div class="popup__container">
+            <div class="popup-dialog">
+                <div class="popup-content">
+                    <div class="popup-title h2-title">
+                        Придумайте
+                        код-пароль
+                    </div>
+                    <div class="popup-close js-popup-close">
+                        <svg class="icon ic-close">
+                            <use xlink:href="#ic-close"></use>
+                        </svg>
+                    </div>
+                    <div class="popup-body">
+                        <div class="password-number">
+                            <span class="password-number__item num1"></span>
+                            <span class="password-number__item num2"></span>
+                            <span class="password-number__item num3"></span>
+                            <span class="password-number__item num4"></span>
+                        </div>
+                        <div class="panel-numbers">
+                            <div class="num num1"><div class="num-item">1</div></div>
+                            <div class="num num2"><div class="num-item">2</div></div>
+                            <div class="num num3"><div class="num-item">3</div></div>
+                            <div class="num num4"><div class="num-item">4</div></div>
+                            <div class="num num5"><div class="num-item">5</div></div>
+                            <div class="num num6"><div class="num-item">6</div></div>
+                            <div class="num num7"><div class="num-item">7</div></div>
+                            <div class="num num8"><div class="num-item">8</div></div>
+                            <div class="num num9"><div class="num-item">9</div></div>
+                            <div class="num num0"><div class="num-item">0</div></div>
+                        </div>
+                        <div class="form-row"><a href="#" class="btn-def btn-def--w100 js-btn-popup" data-popup="popup-pop15">Продолжить</a></div>
+                    </div><!--end popup-body -->
+                </div><!-- /.popup-content -->
+            </div><!-- /.popup-dialog -->
+        </div><!-- /.popup__container -->
+    </div><!-- /.popup in -->
+    <div id="popup-pop15" class="popup has-modal">
+        <div class="popup__container">
+            <div class="popup-dialog">
+                <div class="popup-content">
+                    <div class="popup-title h2-title">
+                        Завершение
+                    </div>
+                    <div class="popup-close js-popup-close">
+                        <svg class="icon ic-close">
+                            <use xlink:href="#ic-close"></use>
+                        </svg>
+                    </div>
+                    <div class="popup-body">
+                        
+                        <div class="b-modal-form">
+                            <div class="b-modal-form__form">
+                                <div class="form-row">
+                                    <div class="b-input-label">Подпись на наш Telegram</div>
+                                    <div class="b-input"><input type="text" placeholder="Введите пароль" class="input"></div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="b-input-label">Подпись на наш YouTube</div>
+                                    <div class="b-input"><input type="text" placeholder="Введите пароль" class="input"></div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="inp-checked inp-checked--inline">
+                                        <label for="id5" class="label">Даю согласие на...</label>
+                                        <input id="id5" class="inp-checked__input" type="checkbox">
+                                        <span class="inp-checked__checked"></span>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="inp-checked inp-checked--inline">
+                                        <label for="id5" class="label">Даю согласие на...</label>
+                                        <input id="id5" class="inp-checked__input" type="checkbox">
+                                        <span class="inp-checked__checked"></span>
+                                    </div>
+                                </div>
+                            </div><!--end b-modal-form__form -->
+                            <div class="form-row"><a href="main.html" class="btn-def btn-def--w100">Начать</a></div>
+                        </div>
+                    </div><!--end popup-body -->
+                </div><!-- /.popup-content -->
+            </div><!-- /.popup-dialog -->
+        </div><!-- /.popup__container -->
+    </div><!-- /.popup in -->
+</div><!--end over -->
+
+<svg style=" display: none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol viewBox="0 0 35 35" id="ic--bitcoin" xmlns="http://www.w3.org/2000/svg"><path d="M24.269 16.674a6.929 6.929 0 003.032-2.598 6.88 6.88 0 001.118-3.808c0-1.276-.302-2.427-.907-3.455-.604-1.028-1.36-1.85-2.266-2.468-.907-.618-1.934-1.024-3.083-1.219a13.77 13.77 0 00-.614-.086V1.215C21.549.544 21.005 0 20.334 0h-2.43c-.67 0-1.214.544-1.214 1.215v1.62h-2.534v-1.62C14.156.544 13.612 0 12.941 0h-2.429c-.671 0-1.215.544-1.215 1.215v1.62H5.13v29.533h4.168v1.417c0 .671.544 1.215 1.215 1.215h2.43c.67 0 1.214-.544 1.214-1.215v-1.417h1.026c.531-.004 1.032-.008 1.507-.014v1.431c0 .671.544 1.215 1.215 1.215h2.43c.67 0 1.214-.544 1.214-1.215V32.23c.338-.02.616-.04.827-.063 1.584-.175 2.917-.641 3.998-1.4 1.082-.76 1.934-1.773 2.559-3.042.625-1.27.937-2.576.937-3.919 0-1.705-.484-3.19-1.45-4.452-.968-1.262-2.351-2.156-4.151-2.68zm-9.75-8.924c2.807 0 4.506.034 5.097.1.994.122 1.742.468 2.246 1.038.504.57.755 1.313.755 2.226 0 .954-.292 1.723-.876 2.307-.584.584-1.387.937-2.408 1.058-.564.067-2.008.1-4.331.1h-3.908V7.75h3.425zm8.35 18.282c-.558.625-1.28 1.018-2.166 1.18-.578.12-1.94.18-4.09.18h-5.52v-7.897h4.815c2.713 0 4.476.14 5.289.423.812.282 1.433.732 1.863 1.35.43.618.645 1.37.645 2.256 0 1.048-.278 1.884-.836 2.508z"/></symbol><symbol viewBox="0 0 35 36" id="ic-buisnes" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#abclip0_417_622)"><path d="M27.708 6.648h-1.604A7.305 7.305 0 0018.958.814h-2.916a7.305 7.305 0 00-7.146 5.834H7.292A7.3 7.3 0 000 13.94v14.583a7.3 7.3 0 007.292 7.292h20.416A7.3 7.3 0 0035 28.523V13.94a7.3 7.3 0 00-7.292-7.292zM16.042 3.73h2.916a4.375 4.375 0 014.107 2.917h-11.13a4.375 4.375 0 014.107-2.917zm-8.75 5.833h20.416a4.375 4.375 0 014.375 4.376v4.374H2.917V13.94a4.375 4.375 0 014.375-4.376zm20.416 23.334H7.292a4.375 4.375 0 01-4.375-4.375V21.23h13.125v1.458a1.458 1.458 0 102.916 0V21.23h13.125v7.292a4.375 4.375 0 01-4.375 4.375z"/></g><defs><clipPath id="abclip0_417_622"><path transform="translate(0 .814)" d="M0 0h35v35H0z"/></clipPath></defs></symbol><symbol viewBox="0 0 35 35" id="ic-card" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#acclip0_21_220)"><path d="M8.021 24.792a2.188 2.188 0 100-4.375 2.188 2.188 0 000 4.375z"/><path d="M27.708 4.375H7.292A7.3 7.3 0 000 11.667v11.666a7.3 7.3 0 007.292 7.292h20.416A7.3 7.3 0 0035 23.333V11.667a7.3 7.3 0 00-7.292-7.292zM7.292 7.292h20.416a4.375 4.375 0 014.375 4.375H2.917a4.375 4.375 0 014.375-4.375zm20.416 20.416H7.292a4.375 4.375 0 01-4.375-4.375v-8.75h29.166v8.75a4.375 4.375 0 01-4.375 4.375z"/></g><defs><clipPath id="acclip0_21_220"><path d="M0 0h35v35H0z"/></clipPath></defs></symbol><symbol viewBox="0 0 35 35" id="ic-clock" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#adclip0_443_2697)"><path d="M17.5 0A17.5 17.5 0 1035 17.5 17.519 17.519 0 0017.5 0zm0 32.083A14.584 14.584 0 1132.083 17.5 14.6 14.6 0 0117.5 32.083z"/><path d="M17.5 8.75a1.458 1.458 0 00-1.459 1.458v6.308l-4.916 3.08a1.461 1.461 0 101.549 2.479l5.6-3.5a1.46 1.46 0 00.684-1.252v-7.115A1.458 1.458 0 0017.5 8.75z"/></g><defs><clipPath id="adclip0_443_2697"><path d="M0 0h35v35H0z"/></clipPath></defs></symbol><symbol viewBox="0 0 14 14" id="ic-close" xmlns="http://www.w3.org/2000/svg"><path d="M13 1a1 1 0 00-1.414 0L7 5.586 2.414 1A1 1 0 001 2.414L5.586 7 1 11.586A1 1 0 002.414 13L7 8.414 11.586 13A1 1 0 0013 11.586L8.414 7 13 2.414A1 1 0 0013 1z"/></symbol><symbol viewBox="0 0 24 24" id="ic-copy" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#afclip0_160_345)"><path d="M21.155 3.272L18.871.913A3.02 3.02 0 0016.715 0H12a5.009 5.009 0 00-4.9 4H7a5.006 5.006 0 00-5 5v10a5.006 5.006 0 005 5h6a5.006 5.006 0 005-5v-.1a5.01 5.01 0 004-4.9V5.36a2.988 2.988 0 00-.845-2.088zM13 22H7a3 3 0 01-3-3V9a3 3 0 013-3v8a5.006 5.006 0 005 5h4a3 3 0 01-3 3zm4-5h-5a3 3 0 01-3-3V5a3 3 0 013-3h4v2a2 2 0 002 2h2v8a3 3 0 01-3 3z"/></g><defs><clipPath id="afclip0_160_345"><path d="M0 0h24v24H0z"/></clipPath></defs></symbol><symbol viewBox="0 0 35 35" id="ic-credit" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#agclip0_417_614)"><path d="M8.021 24.792a2.188 2.188 0 100-4.375 2.188 2.188 0 000 4.375z"/><path d="M27.708 4.375H7.292A7.3 7.3 0 000 11.667v11.666a7.3 7.3 0 007.292 7.292h20.416A7.3 7.3 0 0035 23.333V11.667a7.3 7.3 0 00-7.292-7.292zM7.292 7.292h20.416a4.375 4.375 0 014.375 4.375H2.917a4.375 4.375 0 014.375-4.375zm20.416 20.416H7.292a4.375 4.375 0 01-4.375-4.375v-8.75h29.166v8.75a4.375 4.375 0 01-4.375 4.375z"/></g><defs><clipPath id="agclip0_417_614"><path d="M0 0h35v35H0z"/></clipPath></defs></symbol><symbol viewBox="0 0 35 35" id="ic-doc" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#ahclip0_417_598)"><path d="M28.488 4.553l-2.415-2.418A7.243 7.243 0 0020.918 0h-9.25a7.3 7.3 0 00-7.292 7.292v20.416A7.3 7.3 0 0011.667 35h11.666a7.3 7.3 0 007.292-7.292v-18a7.244 7.244 0 00-2.137-5.155zm-2.061 2.062c.206.206.392.433.552.677h-3.646V3.646c.244.162.47.348.679.554l2.415 2.415zm1.281 21.093a4.375 4.375 0 01-4.375 4.375H11.667a4.375 4.375 0 01-4.375-4.375V7.292a4.375 4.375 0 014.375-4.375h8.75v4.375a2.917 2.917 0 002.916 2.916h4.375v17.5zm-4.375-14.583a1.458 1.458 0 010 2.917H11.667a1.458 1.458 0 110-2.917h11.666zm1.459 7.292a1.458 1.458 0 01-1.459 1.458H11.667a1.458 1.458 0 110-2.917h11.666a1.458 1.458 0 011.459 1.459zm-.28 4.977a1.458 1.458 0 01-.317 2.033 9.426 9.426 0 01-5.04 1.74 4.743 4.743 0 01-2.917-1.021c-.478-.328-.66-.438-1.02-.438a5.76 5.76 0 00-2.672 1.158 1.458 1.458 0 01-1.77-2.316 8.548 8.548 0 014.447-1.758 4.407 4.407 0 012.672.955c.347.312.794.49 1.26.503a6.687 6.687 0 003.32-1.18 1.459 1.459 0 012.037.324z"/></g><defs><clipPath id="ahclip0_417_598"><path d="M0 0h35v35H0z"/></clipPath></defs></symbol><symbol viewBox="0 0 35 35" id="ic-eth" xmlns="http://www.w3.org/2000/svg"><path d="M17.418 26.206L6.68 19.863 17.417 35l10.748-15.137-10.751 6.343h.004zM17.582 0L6.84 17.825l10.74 6.35 10.74-6.344L17.583 0z"/></symbol><symbol viewBox="0 0 24 24" id="ic-glass-off" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#ajclip0_131_822)"><path d="M23.271 9.419a15.867 15.867 0 00-3.37-3.91l2.8-2.8a1 1 0 00-1.415-1.413l-3.045 3.049a12.054 12.054 0 00-6.24-1.69c-6.192 0-9.72 4.238-11.272 6.764a4.908 4.908 0 000 5.162A15.866 15.866 0 004.1 18.49l-2.8 2.8a1 1 0 101.414 1.414l3.052-3.052A12.055 12.055 0 0012 21.345c6.191 0 9.72-4.238 11.271-6.764a4.909 4.909 0 000-5.162zM2.433 13.534a2.918 2.918 0 010-3.068C3.767 8.3 6.783 4.655 12 4.655a10.1 10.1 0 014.766 1.165l-2.013 2.013a4.992 4.992 0 00-6.92 6.92l-2.31 2.31a13.724 13.724 0 01-3.09-3.53zM15 12a3 3 0 01-3 3 2.95 2.95 0 01-1.285-.3l3.985-3.985c.196.4.298.84.3 1.285zm-6 0a3 3 0 013-3c.445.002.885.104 1.285.3L9.3 13.285c-.196-.4-.298-.84-.3-1.285zm12.567 1.534c-1.334 2.166-4.349 5.81-9.567 5.81a10.1 10.1 0 01-4.766-1.164l2.013-2.013a4.992 4.992 0 006.92-6.92l2.31-2.31c1.225.99 2.27 2.184 3.09 3.529a2.918 2.918 0 010 3.068z"/></g><defs><clipPath id="ajclip0_131_822"><path d="M0 0h24v24H0z"/></clipPath></defs></symbol><symbol viewBox="0 0 24 24" id="ic-glass-on" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#akclip0_131_849)"><path d="M23.27 9.419C21.72 6.893 18.193 2.655 12 2.655c-6.192 0-9.72 4.238-11.271 6.764a4.908 4.908 0 000 5.162c1.55 2.526 5.079 6.764 11.27 6.764 6.193 0 9.72-4.238 11.272-6.764a4.908 4.908 0 000-5.162zm-1.704 4.115c-1.332 2.166-4.347 5.81-9.566 5.81-5.22 0-8.234-3.644-9.566-5.81a2.918 2.918 0 010-3.068C3.766 8.3 6.78 4.655 12 4.655s8.234 3.64 9.566 5.81a2.918 2.918 0 010 3.069z"/><path d="M12 7a5 5 0 105 5 5.006 5.006 0 00-5-5zm0 8a3 3 0 110-6 3 3 0 010 6z"/></g><defs><clipPath id="akclip0_131_849"><path d="M0 0h24v24H0z"/></clipPath></defs></symbol><symbol viewBox="0 0 31 35" id="ic-grame" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M15.767.138a1.066 1.066 0 00-1.06.006l-3.935 2.282a1.066 1.066 0 101.07 1.845l2.28-1.322v2.916a1.173 1.173 0 102.347 0V3.01l2.174 1.261a1.067 1.067 0 101.07-1.845L15.992.268a1.17 1.17 0 00-.225-.13zM5.544 7.922a1.067 1.067 0 10-1.07-1.845L.54 8.359c-.312.18-.51.505-.53.862a1.172 1.172 0 00-.002.274v4.35a1.067 1.067 0 002.133 0V11.28l2.476 1.43a1.173 1.173 0 101.173-2.033L3.286 9.231l2.258-1.309zm20.467-1.845a1.067 1.067 0 00-1.07 1.845l2.31 1.34-2.449 1.414a1.173 1.173 0 101.174 2.032l2.369-1.368v2.505a1.067 1.067 0 002.133 0V9.87a1.172 1.172 0 00-.742-1.632l-3.725-2.16zM2.14 21.147a1.067 1.067 0 00-2.134 0v4.397A1.17 1.17 0 00.8 26.785l3.675 2.13a1.066 1.066 0 101.07-1.845l-2.218-1.285 2.462-1.422a1.173 1.173 0 10-1.173-2.032l-2.476 1.43v-2.614zm28.337 0a1.067 1.067 0 00-2.133 0V23.7l-2.37-1.368a1.173 1.173 0 00-1.173 2.032l2.41 1.39-2.271 1.317a1.067 1.067 0 001.07 1.846l3.595-2.085a1.17 1.17 0 00.872-1.661v-4.023zm-18.636 9.575a1.066 1.066 0 10-1.07 1.845l3.936 2.282c.117.068.243.112.373.131a1.178 1.178 0 001.065-.345l3.567-2.068a1.067 1.067 0 10-1.07-1.845l-2.174 1.26v-2.808a1.173 1.173 0 10-2.346 0v2.87l-2.281-1.322zm8.563-16.038c.32.564.123 1.28-.44 1.6l-3.543 2.012v4.205a1.173 1.173 0 01-2.346 0v-4.208l-3.5-2.012a1.173 1.173 0 011.17-2.034l3.507 2.015 3.552-2.018a1.173 1.173 0 011.6.44z"/></symbol><symbol viewBox="0 0 35 35" id="ic-info" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#amclip0_20_200)"><path d="M17.5 0A17.5 17.5 0 1035 17.5 17.519 17.519 0 0017.5 0zm0 32.083A14.584 14.584 0 1132.083 17.5 14.6 14.6 0 0117.5 32.083z"/><path d="M17.5 14.584h-1.46a1.459 1.459 0 000 2.916h1.46v8.75a1.458 1.458 0 102.916 0V17.5a2.917 2.917 0 00-2.916-2.916zm0-2.918a2.188 2.188 0 100-4.375 2.188 2.188 0 000 4.375z"/></g><defs><clipPath id="amclip0_20_200"><path d="M0 0h35v35H0z"/></clipPath></defs></symbol><symbol viewBox="0 0 35 35" id="ic-rub" xmlns="http://www.w3.org/2000/svg"><path d="M20.738 21.875c5.818 0 9.887-4.064 9.887-9.907s-4.069-9.78-9.887-9.78H9.57a.82.82 0 00-.82.82v14.125H5.195a.82.82 0 00-.82.82v3.102c0 .453.367.82.82.82H8.75v2.188H5.195a.82.82 0 00-.82.82v2.734c0 .453.367.82.82.82H8.75v3.555c0 .453.367.82.82.82h4.003a.82.82 0 00.82-.82v-3.555H25.43a.82.82 0 00.82-.82v-2.734a.82.82 0 00-.82-.82H14.394v-2.188h6.344zM14.393 6.887h5.381c3.194 0 5.119 1.99 5.119 5.08 0 3.134-1.925 5.166-5.206 5.166h-5.294V6.887z"/></symbol><symbol viewBox="0 0 35 36" id="ic-stah" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#aoclip0_417_606)"><path d="M27.098 4.06L17.96 1.014c-.299-.1-.622-.1-.921 0L7.902 4.06a7.281 7.281 0 00-4.986 6.917v7.462c0 11.03 13.417 17.121 13.991 17.375a1.459 1.459 0 001.184 0c.575-.254 13.992-6.345 13.992-17.375v-7.462a7.281 7.281 0 00-4.986-6.917zm2.069 14.38c0 7.954-9.215 13.172-11.667 14.42-2.454-1.243-11.666-6.445-11.666-14.42v-7.463a4.375 4.375 0 012.992-4.15L17.5 3.934l8.674 2.891a4.375 4.375 0 012.993 4.15v7.463z"/><path d="M21.875 15.52H18.96v-2.916a1.458 1.458 0 10-2.917 0v2.917h-2.917a1.458 1.458 0 000 2.916h2.917v2.917a1.458 1.458 0 102.917 0v-2.917h2.916a1.458 1.458 0 000-2.916z"/></g><defs><clipPath id="aoclip0_417_606"><path transform="translate(0 .938)" d="M0 0h35v35H0z"/></clipPath></defs></symbol><symbol viewBox="0 0 35 35" id="ic-trash" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#apclip0_20_208)"><path d="M30.625 5.833h-4.521A7.305 7.305 0 0018.958 0h-2.916a7.305 7.305 0 00-7.146 5.833H4.375a1.458 1.458 0 000 2.917h1.458v18.958A7.3 7.3 0 0013.125 35h8.75a7.3 7.3 0 007.291-7.292V8.75h1.459a1.458 1.458 0 100-2.917zM16.04 2.917h2.917a4.384 4.384 0 014.126 2.916H11.916a4.384 4.384 0 014.125-2.916zm10.21 24.791a4.375 4.375 0 01-4.375 4.375h-8.75a4.375 4.375 0 01-4.375-4.375V8.75h17.5v18.958z"/><path d="M14.583 26.249a1.458 1.458 0 001.459-1.458v-8.75a1.459 1.459 0 00-2.917 0v8.75a1.458 1.458 0 001.458 1.458zm5.833 0a1.458 1.458 0 001.459-1.458v-8.75a1.459 1.459 0 00-2.917 0v8.75a1.459 1.459 0 001.458 1.458z"/></g><defs><clipPath id="apclip0_20_208"><path d="M0 0h35v35H0z"/></clipPath></defs></symbol><symbol viewBox="0 0 35 35" id="ic-tzc" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#aqclip0_445_3792)"><path d="M35.017 16.616c0-2.199-5.983-4.033-13.932-4.456l-.001-3.503h9.926v-7.29H3.868v7.29h9.925v3.52C5.988 12.63.15 14.444.15 16.616s5.838 3.987 13.643 4.439v12.579h7.291V21.072c7.95-.423 13.933-2.258 13.933-4.456zm-17.434 2.166c-8.533 0-15.45-1.32-15.45-2.951 0-1.38 4.96-2.539 11.66-2.861v.83l.001 3.405a70.096 70.096 0 007.29.016v-4.264c6.846.303 11.95 1.473 11.95 2.874 0 1.63-6.918 2.95-15.45 2.95z"/></g><defs><clipPath id="aqclip0_445_3792"><path d="M0 0h35v35H0z"/></clipPath></defs></symbol><symbol viewBox="0 0 63 64" id="ic-unlock" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#arclip0_14_64)"><path d="M44.626 21.336h-26.25v-2.667a13.47 13.47 0 012.747-8.167 13.112 13.112 0 017.095-4.746 12.935 12.935 0 018.47.661 13.202 13.202 0 016.297 5.793c.167.307.392.576.662.794a2.61 2.61 0 001.932.562 2.602 2.602 0 001.757-.991 2.683 2.683 0 00.553-1.963 2.697 2.697 0 00-.313-.991 18.482 18.482 0 00-8.817-8.107A18.108 18.108 0 0026.9.59a18.357 18.357 0 00-9.93 6.647 18.858 18.858 0 00-3.845 11.432v3.797a13.181 13.181 0 00-5.727 4.91A13.486 13.486 0 005.25 34.67v16a13.457 13.457 0 003.85 9.423 13.037 13.037 0 009.275 3.91h26.25a13.037 13.037 0 009.277-3.91 13.457 13.457 0 003.849-9.423v-16a13.458 13.458 0 00-3.85-9.423 13.037 13.037 0 00-9.276-3.91zM52.5 50.669c0 2.122-.83 4.157-2.307 5.657a7.813 7.813 0 01-5.569 2.343h-26.25a7.813 7.813 0 01-5.568-2.343 8.065 8.065 0 01-2.306-5.657v-16c0-2.122.83-4.157 2.306-5.657a7.814 7.814 0 015.568-2.343h26.25c2.09 0 4.092.843 5.569 2.343A8.065 8.065 0 0152.5 34.67v16z"/><path d="M31.5 37.335c-.696 0-1.363.28-1.856.781a2.689 2.689 0 00-.768 1.886v5.333c0 .707.276 1.386.768 1.886.493.5 1.16.78 1.857.78.696 0 1.363-.28 1.856-.78a2.69 2.69 0 00.769-1.886v-5.333c0-.708-.277-1.386-.77-1.886a2.604 2.604 0 00-1.856-.781z"/></g><defs><clipPath id="arclip0_14_64"><path d="M0 0h63v64H0z"/></clipPath></defs></symbol><symbol viewBox="0 0 35 35" id="ic-usd" xmlns="http://www.w3.org/2000/svg"><path d="M28.002 22.95c0 2.217-.801 4.003-2.405 5.355-1.604 1.34-3.192 2.141-6.079 2.406V35h-4.182v-4.205c-3.403-.07-5.73-.67-8.296-1.799v-5.523c1.213.6 2.671 1.13 4.372 1.59 1.716.46 2.585.732 3.924.816v-6.486l-.744-.544c-2.761-1.088-4.72-2.266-5.878-3.535-1.144-1.283-1.716-2.866-1.716-4.75 0-2.021.788-3.681 2.364-4.978 1.59-1.311 3.143-2.106 5.974-2.385v-3.2h4.182v3.116c3.194.14 5.423.782 8.003 1.925l-1.966 4.895c-2.176-.892-3.75-1.436-6.037-1.631v6.171c2.72 1.046 3.993 1.953 5.137 2.72 1.158.767 2.001 1.61 2.531 2.532.544.92.816 1.994.816 3.22zm-6.297.314c0-.586-.237-1.081-.711-1.485-.474-.405-.528-.823-1.476-1.256v5.21c1.896-.322 2.187-1.144 2.187-2.47zm-8.41-12.7c0 .615.21 1.124.628 1.528.432.39.465.795 1.413 1.213V8.39c-1.8.265-2.04.99-2.04 2.176z"/></symbol><symbol viewBox="0 0 50 51" id="ic-yprav" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#atclip0_20_216)"><path d="M25.196 2.33a4.325 4.325 0 00-3.712 2.062L8.46 24.366a7.284 7.284 0 005.803 11.688l3.542-.001a1.457 1.457 0 011.033.428l3.267 3.267c.461.457 1.02.804 1.634 1.016l-.001.015h.054c.91.305 1.894.303 2.802-.006h.054l-.001-.016a4.323 4.323 0 001.634-1.015l3.267-3.267a1.458 1.458 0 011.03-.428h3.542a7.238 7.238 0 006.531-4.038 7.194 7.194 0 00-.662-7.56L28.934 4.435a4.339 4.339 0 00-3.738-2.104zM17.81 33.137l-3.544.002a4.288 4.288 0 01-3.914-2.426 4.343 4.343 0 01.489-4.667L23.737 6.272l.002 30.99-2.84-2.841a4.344 4.344 0 00-3.09-1.284zm21.8-7.013a4.375 4.375 0 01-3.482 7.013H32.58a4.343 4.343 0 00-3.091 1.28l-2.84 2.84.004-30.986L39.61 26.124z"/></g><defs><clipPath id="atclip0_20_216"><path transform="rotate(-45 30.715 12.091)" d="M0 0h35v35H0z"/></clipPath></defs></symbol><symbol viewBox="0 0 47 53" id="ic1" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M23.876.209a1.615 1.615 0 00-1.604.009l-5.96 3.455a1.615 1.615 0 101.62 2.795l3.454-2.003v4.416a1.777 1.777 0 003.553 0V4.56l3.293 1.909a1.615 1.615 0 101.62-2.795L24.216.406a1.773 1.773 0 00-.34-.197zM8.396 11.996a1.615 1.615 0 00-1.62-2.794l-5.96 3.456a1.615 1.615 0 00-.802 1.305 1.774 1.774 0 00-.003.415v6.588a1.615 1.615 0 003.23 0V17.08l3.749 2.164a1.777 1.777 0 001.776-3.077l-3.79-2.188 3.42-1.983zm30.992-2.794a1.615 1.615 0 00-1.62 2.794l3.5 2.03-3.71 2.141a1.776 1.776 0 101.776 3.077l3.588-2.071v3.793a1.615 1.615 0 103.23 0v-6.02a1.775 1.775 0 00-1.123-2.473l-5.642-3.27zM3.24 32.023a1.615 1.615 0 00-3.23 0v6.658a1.771 1.771 0 001.201 1.88l5.564 3.226a1.615 1.615 0 101.62-2.794l-3.358-1.948 3.728-2.152a1.777 1.777 0 00-1.776-3.077L3.24 35.98v-3.957zm42.911 0a1.615 1.615 0 00-3.23 0v3.864l-3.587-2.071a1.777 1.777 0 10-1.777 3.077l3.648 2.106-3.439 1.993a1.615 1.615 0 001.62 2.795l5.445-3.157a1.775 1.775 0 001.32-2.516v-6.09zm-28.22 14.498a1.615 1.615 0 10-1.62 2.795l5.96 3.455c.177.103.369.17.565.2a1.771 1.771 0 001.613-.523l5.402-3.132a1.615 1.615 0 10-1.62-2.795l-3.293 1.91v-4.253a1.777 1.777 0 00-3.553 0v4.346l-3.454-2.003zM30.898 22.236a1.777 1.777 0 01-.667 2.423l-5.363 3.047v6.367a1.776 1.776 0 11-3.553 0V27.7l-5.3-3.046a1.776 1.776 0 011.77-3.08l5.311 3.052 5.38-3.057a1.776 1.776 0 012.422.667z"/></symbol><symbol viewBox="0 0 42 42" id="ic2" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#avclip0_106_260)"><path d="M41.76 19.875c0-2.587-7.041-4.746-16.398-5.245v-4.123h11.682v-8.58H5.098v8.58H16.78v4.144C7.593 15.183.72 17.319.72 19.875c0 2.557 6.872 4.693 16.059 5.225v14.805h8.581V25.12c9.358-.497 16.399-2.657 16.399-5.245zm-20.52 2.55c-10.043 0-18.185-1.555-18.185-3.474 0-1.624 5.838-2.988 13.725-3.367v4.985a82.562 82.562 0 008.581.02v-5.02c8.058.356 14.065 1.734 14.065 3.382 0 1.92-8.142 3.473-18.185 3.473z"/></g><defs><clipPath id="avclip0_106_260"><path transform="translate(.545 .318)" d="M0 0h41.196v41.196H0z"/></clipPath></defs></symbol><symbol viewBox="0 0 35 35" id="ic3" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#awclip0_10_127)"><path d="M34.76 12.825a4.636 4.636 0 00-4.472-3.246h-6.372l-1.935-6.032a4.706 4.706 0 00-8.963 0L11.083 9.58H4.712a4.706 4.706 0 00-2.771 8.505l5.186 3.791-1.972 6.107a4.635 4.635 0 001.727 5.269 4.633 4.633 0 005.541-.028l5.077-3.736 5.078 3.731a4.706 4.706 0 007.267-5.237l-1.972-6.106 5.192-3.791a4.634 4.634 0 001.696-5.259zm-3.416 2.904L25.3 20.146a1.458 1.458 0 00-.528 1.627l2.297 7.102a1.79 1.79 0 01-2.763 1.991l-5.943-4.375a1.458 1.458 0 00-1.727 0l-5.942 4.375a1.789 1.789 0 01-2.771-1.99l2.304-7.103a1.459 1.459 0 00-.528-1.627l-6.043-4.417a1.79 1.79 0 011.056-3.233h7.437a1.458 1.458 0 001.388-1.013l2.26-7.045a1.79 1.79 0 013.407 0l2.26 7.045a1.459 1.459 0 001.39 1.012h7.437a1.79 1.79 0 011.055 3.234h-.002z"/></g><defs><clipPath id="awclip0_10_127"><path d="M0 0h35v35H0z"/></clipPath></defs></symbol><symbol viewBox="0 0 35 35" id="ic4" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#axclip0_57_435)"><path d="M27.708 4.375h-9.52a1.486 1.486 0 01-.651-.145l-4.603-2.31a4.396 4.396 0 00-1.956-.461H7.292A7.3 7.3 0 000 8.75v17.5a7.3 7.3 0 007.292 7.292h20.416A7.3 7.3 0 0035 26.25V11.667a7.3 7.3 0 00-7.292-7.292zm-20.416 0h3.686c.226-.001.449.049.652.146l4.603 2.303a4.396 4.396 0 001.955.468h9.52a4.375 4.375 0 014.053 2.745L2.917 10.2V8.75a4.375 4.375 0 014.375-4.375zm20.416 26.25H7.292a4.375 4.375 0 01-4.375-4.375V13.117l29.166-.165V26.25a4.375 4.375 0 01-4.375 4.375z"/></g><defs><clipPath id="axclip0_57_435"><path d="M0 0h35v35H0z"/></clipPath></defs></symbol><symbol viewBox="0 0 24 24" id="menu-i1" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#azclip0_22_282)"><path d="M23.121 9.069l-7.585-7.586a5.008 5.008 0 00-7.072 0L.88 9.069a2.978 2.978 0 00-.88 2.12v9.818a3 3 0 003 3h18a3 3 0 003-3V11.19a2.978 2.978 0 00-.879-2.121zm-8.12 12.938H9v-3.934a3 3 0 016 0v3.934zm7-1a1 1 0 01-1 1h-4v-3.934a5 5 0 00-10 0v3.934H3a1 1 0 01-1-1V11.19a1 1 0 01.292-.707L9.878 2.9a3.008 3.008 0 014.244 0l7.585 7.586c.186.187.291.44.293.704v9.817z"/></g><defs><clipPath id="azclip0_22_282"><path d="M0 0h24v24H0z"/></clipPath></defs></symbol><symbol viewBox="0 0 24 24" id="menu-i2" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#baclip0_22_284)"><path d="M19 0H5a5.006 5.006 0 00-5 5v14a5.006 5.006 0 005 5h14a5.006 5.006 0 005-5V5a5.006 5.006 0 00-5-5zM7 22v-1a5 5 0 1110 0v1H7zm15-3a3 3 0 01-3 3v-1a7 7 0 10-14 0v1a3 3 0 01-3-3V5a3 3 0 013-3h14a3 3 0 013 3v14z"/><path d="M12 4a4 4 0 100 8 4 4 0 000-8zm0 6a2 2 0 110-4 2 2 0 010 4z"/></g><defs><clipPath id="baclip0_22_284"><path d="M0 0h24v24H0z"/></clipPath></defs></symbol><symbol viewBox="0 0 24 24" id="menu-i4" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#bbclip0_22_287)"><path d="M19 22H5a5.006 5.006 0 01-5-5V7a5.006 5.006 0 015-5h14a5.006 5.006 0 015 5v10a5.006 5.006 0 01-5 5zM5 4a3 3 0 00-3 3v10a3 3 0 003 3h14a3 3 0 003-3V7a3 3 0 00-3-3H5z"/><path d="M19 13h-8a1 1 0 110-2h8a1 1 0 010 2zM7 13H5a1 1 0 110-2h2a1 1 0 010 2zm6 5H5a1 1 0 010-2h8a1 1 0 110 2zm6 0h-2a1 1 0 010-2h2a1 1 0 110 2z"/></g><defs><clipPath id="bbclip0_22_287"><path d="M0 0h24v24H0z"/></clipPath></defs></symbol><symbol viewBox="0 0 24 24" id="menu-i5" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#bcclip0_22_283)"><path d="M12 0a12 12 0 1012 12A12.013 12.013 0 0012 0zm0 22a10 10 0 1110-10 10.011 10.011 0 01-10 10z"/><path d="M12 6a1 1 0 00-1 1v4.325l-3.371 2.112a1.002 1.002 0 101.062 1.7l3.84-2.4a1 1 0 00.469-.858V7a1 1 0 00-1-1z"/></g><defs><clipPath id="bcclip0_22_283"><path d="M0 0h24v24H0z"/></clipPath></defs></symbol><symbol viewBox="0 0 24 13" id="sel-arr" xmlns="http://www.w3.org/2000/svg"><path d="M12 12.17a5 5 0 01-3.54-1.46L.29 2.54a1.004 1.004 0 111.42-1.42l8.17 8.17a3 3 0 004.24 0l8.17-8.17a1.004 1.004 0 111.42 1.42l-8.17 8.17A5 5 0 0112 12.17z"/></symbol>
+    <symbol viewBox="0 0 40 40" id="menu-i3" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="20" cy="20" r="20" fill="#060606"/>
+        <g clip-path="url(#clip0_601_584)">
+            <path d="M19.6427 5.29609C19.1124 5.29289 18.5902 5.42651 18.1267 5.68405C17.6631 5.94159 17.2738 6.31433 16.9964 6.76627L7.71217 21.005C7.12774 21.7752 6.76994 22.6933 6.67909 23.6558C6.58824 24.6184 6.76793 25.5872 7.19793 26.4532C7.62794 27.3192 8.29117 28.0479 9.11295 28.5573C9.93473 29.0667 10.8824 29.3365 11.8493 29.3365L14.3743 29.3357C14.511 29.3357 14.6463 29.3626 14.7726 29.415C14.8988 29.4673 15.0135 29.5441 15.1101 29.6408L17.4389 31.9695C17.7679 32.2954 18.1662 32.5428 18.604 32.6936L18.6033 32.7046L18.6415 32.7046C19.2899 32.9223 19.992 32.9208 20.6395 32.7002L20.6777 32.7002L20.6769 32.6892C21.1148 32.5384 21.513 32.2909 21.8421 31.9651L24.1708 29.6364C24.3655 29.4414 24.6296 29.3317 24.9052 29.3313L27.4295 29.3313C28.1103 29.3351 28.7851 29.204 29.415 28.9458C30.045 28.6875 30.6175 28.3071 31.0998 27.8266C31.5005 27.4249 31.8334 26.9609 32.0855 26.4527C32.5168 25.5998 32.7011 24.6434 32.6177 23.6913C32.5343 22.7393 32.1865 21.8294 31.6136 21.0645L22.3074 6.7964C22.0313 6.33682 21.6406 5.95688 21.1734 5.69386C20.7063 5.43083 20.1788 5.29376 19.6427 5.29609V5.29609ZM14.3772 27.2569L11.8515 27.2584C11.2701 27.2654 10.6987 27.1065 10.2045 26.8003C9.7102 26.4941 9.31355 26.0532 9.06106 25.5294C8.79439 24.9997 8.68545 24.4046 8.74722 23.8148C8.80899 23.225 9.03886 22.6654 9.4095 22.2024L18.6025 8.10633L18.604 30.1972L16.5788 28.1721C16.2906 27.8816 15.9476 27.6511 15.5697 27.494C15.1918 27.337 14.7865 27.2563 14.3772 27.2569V27.2569ZM29.9178 22.2575C30.2673 22.72 30.4811 23.2707 30.535 23.8479C30.589 24.4251 30.481 25.006 30.2232 25.5252C29.9654 26.0444 29.5679 26.4815 29.0755 26.7874C28.583 27.0933 28.0151 27.2559 27.4354 27.2569L24.9067 27.2569C24.4974 27.2558 24.0919 27.3358 23.7138 27.4924C23.3356 27.649 22.9923 27.879 22.7036 28.1691L20.6784 30.1943L20.6821 8.1056L29.9178 22.2575Z" fill="white"/>
+        </g>
+        <defs>
+            <clipPath id="clip0_601_584">
+                <rect width="24.9498" height="24.9498" fill="white" transform="translate(2 21.6422) rotate(-45)"/>
+            </clipPath>
+        </defs>
+    </symbol>
+    <symbol id="ic-check" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M7.79996 21.425C7.46562 21.4251 7.13452 21.3593 6.82565 21.2313C6.51678 21.1033 6.23619 20.9156 5.99996 20.679L0.438965 15.121L2.56097 13L7.79996 18.239L21.439 4.59998L23.561 6.72098L9.59997 20.679C9.36374 20.9156 9.08315 21.1033 8.77428 21.2313C8.46541 21.3593 8.13431 21.4251 7.79996 21.425V21.425Z" />
+    </symbol>
+    <symbol  viewBox="0 0 24 24" id="ic-cross" xmlns="http://www.w3.org/2000/svg">
+        <g clip-path="url(#clip0_445_4239)">
+            <path d="M24.061 2.06097L21.939 -0.0610352L12 9.87896L2.06097 -0.0610352L-0.0610352 2.06097L9.87896 12L-0.0610352 21.939L2.06097 24.061L12 14.121L21.939 24.061L24.061 21.939L14.121 12L24.061 2.06097Z" />
+        </g>
+        <defs>
+            <clipPath id="clip0_445_4239">
+                <rect width="24" height="24" fill="white"/>
+            </clipPath>
+        </defs>
+    </symbol>
+    <symbol id="ic-angle-right"  viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg">
+        <g clip-path="url(#clip0_417_607)">
+            <path d="M6.99994 24C6.86833 24.0008 6.73787 23.9756 6.61603 23.9258C6.4942 23.876 6.38338 23.8027 6.28994 23.71C6.19621 23.6171 6.12182 23.5065 6.07105 23.3846C6.02028 23.2628 5.99414 23.132 5.99414 23C5.99414 22.868 6.02028 22.7373 6.07105 22.6155C6.12182 22.4936 6.19621 22.383 6.28994 22.29L14.4599 14.12C15.0217 13.5575 15.3373 12.7951 15.3373 12C15.3373 11.205 15.0217 10.4426 14.4599 9.88005L6.28994 1.71006C6.10164 1.52176 5.99585 1.26636 5.99585 1.00006C5.99585 0.733761 6.10164 0.478366 6.28994 0.290063C6.47824 0.101759 6.73364 -0.00402832 6.99994 -0.00402832C7.26624 -0.00402832 7.52164 0.101759 7.70994 0.290063L15.8799 8.46005C16.3456 8.92451 16.715 9.47626 16.9671 10.0837C17.2191 10.6912 17.3489 11.3424 17.3489 12C17.3489 12.6577 17.2191 13.3089 16.9671 13.9164C16.715 14.5238 16.3456 15.0756 15.8799 15.54L7.70994 23.71C7.6165 23.8027 7.50568 23.876 7.38385 23.9258C7.26201 23.9756 7.13155 24.0008 6.99994 24Z" />
+        </g>
+        <defs>
+            <clipPath id="clip0_417_607">
+                <rect width="24" height="24" fill="white"/>
+            </clipPath>
+        </defs>
+    </symbol>
+    <symbol id="ic-bell"  viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <g clip-path="url(#clip0_514_1285)">
+            <path d="M22.5549 13.6622L20.6549 6.82618C20.098 4.82351 18.8877 3.06447 17.2163 1.82865C15.5449 0.592832 13.5083 -0.0488349 11.4304 0.00564524C9.35244 0.0601253 7.35233 0.807625 5.74798 2.12933C4.14364 3.45103 3.02713 5.27108 2.57592 7.30018L1.10492 13.9152C0.942436 14.6461 0.946193 15.4042 1.11591 16.1335C1.28563 16.8628 1.61699 17.5446 2.0855 18.1287C2.55402 18.7128 3.14774 19.1842 3.82283 19.5081C4.49792 19.832 5.23714 20.0002 5.98592 20.0002H7.09992C7.32944 21.1305 7.94265 22.1467 8.83566 22.8766C9.72867 23.6065 10.8466 24.0052 11.9999 24.0052C13.1533 24.0052 14.2712 23.6065 15.1642 22.8766C16.0572 22.1467 16.6704 21.1305 16.8999 20.0002H17.7379C18.5087 20.0002 19.2691 19.8221 19.9597 19.4796C20.6502 19.1372 21.2523 18.6397 21.7187 18.026C22.1852 17.4124 22.5035 16.6992 22.6487 15.9422C22.794 15.1852 22.7622 14.4049 22.5559 13.6622H22.5549ZM11.9999 22.0002C11.3817 21.9976 10.7793 21.8041 10.2752 21.4461C9.77115 21.0881 9.39 20.5831 9.18392 20.0002H14.8159C14.6098 20.5831 14.2287 21.0881 13.7246 21.4461C13.2206 21.8041 12.6182 21.9976 11.9999 22.0002ZM20.1259 16.8152C19.8473 17.1848 19.4862 17.4844 19.0715 17.6901C18.6568 17.8958 18.1998 18.002 17.7369 18.0002H5.98592C5.53671 18.0001 5.09324 17.8991 4.68826 17.7048C4.28328 17.5104 3.92713 17.2275 3.64608 16.8771C3.36504 16.5266 3.16628 16.1176 3.06448 15.68C2.96268 15.2425 2.96044 14.7877 3.05792 14.3492L4.52792 7.73318C4.88227 6.13939 5.75923 4.70978 7.01938 3.67163C8.27953 2.63347 9.85054 2.04635 11.4827 2.00359C13.1148 1.96083 14.7144 2.4649 16.0272 3.43565C17.34 4.4064 18.2906 5.78813 18.7279 7.36118L20.6279 14.1972C20.7535 14.6426 20.7735 15.1111 20.6863 15.5655C20.5992 16.02 20.4073 16.4478 20.1259 16.8152Z" />
+        </g>
+        <defs>
+            <clipPath id="clip0_514_1285">
+                <rect width="24" height="24" fill="white"/>
+            </clipPath>
+        </defs>
+    </symbol>
+    <symbol viewBox="0 0 35 35" id="ic-cloud" xmlns="http://www.w3.org/2000/svg">
+        <path d="M25.9468 10.5178C25.2987 7.7313 23.6494 5.28008 21.3124 3.63003C18.9754 1.97998 16.1135 1.24614 13.2709 1.56799C10.4282 1.88984 7.80288 3.24495 5.89392 5.37574C3.98497 7.50653 2.92546 10.2644 2.9168 13.1253C2.91554 14.9896 3.36588 16.8265 4.2293 18.4788C2.65594 19.3219 1.40946 20.6667 0.687909 22.2993C-0.0336463 23.932 -0.188891 25.759 0.24684 27.49C0.68257 29.2211 1.68428 30.7568 3.09283 31.8533C4.50137 32.9498 6.23594 33.5442 8.02097 33.5419H23.3335C26.1905 33.5287 28.9433 32.4675 31.07 30.5597C33.1967 28.6518 34.5493 26.03 34.8716 23.1912C35.1938 20.3523 34.4631 17.494 32.8181 15.1581C31.1731 12.8221 28.7282 11.171 25.9468 10.5178V10.5178ZM23.3335 30.6253H8.02097C6.77908 30.629 5.57867 30.1786 4.64568 29.359C3.71268 28.5393 3.11146 27.4069 2.95517 26.1749C2.79889 24.9429 3.09832 23.6963 3.7971 22.6696C4.49588 21.643 5.54582 20.9072 6.7493 20.6007C6.98075 20.5411 7.19402 20.4255 7.37032 20.2642C7.54663 20.1028 7.68058 19.9006 7.76038 19.6753C7.84018 19.45 7.86339 19.2086 7.82796 18.9722C7.79253 18.7359 7.69956 18.5118 7.55722 18.3198C6.43597 16.8203 5.83115 14.9976 5.83347 13.1253C5.8501 10.9173 6.70086 8.7973 8.21513 7.19036C9.7294 5.58342 11.7952 4.60837 13.9983 4.46076C16.2013 4.31315 18.3787 5.0039 20.0938 6.39447C21.809 7.78504 22.9349 9.77261 23.246 11.9586C23.2879 12.276 23.4332 12.5708 23.6593 12.7975C23.8855 13.0241 24.1799 13.1701 24.4972 13.2128C26.683 13.5237 28.6704 14.6495 30.061 16.3643C31.4516 18.0791 32.1425 20.2562 31.9953 22.459C31.8481 24.6619 30.8736 26.7277 29.2671 28.2422C27.6607 29.7567 25.5412 30.6079 23.3335 30.6253V30.6253Z" />
+    </symbol>
+    <symbol  viewBox="0 0 35 35" id="ic-home" xmlns="http://www.w3.org/2000/svg">
+        <g clip-path="url(#clip0_24_165)">
+            <path d="M33.7184 13.2255L22.6569 2.16254C21.2879 0.797528 19.4335 0.0310059 17.5003 0.0310059C15.567 0.0310059 13.7126 0.797528 12.3436 2.16254L1.28214 13.2255C0.874424 13.6306 0.551176 14.1126 0.331132 14.6435C0.111088 15.1745 -0.00137519 15.7438 0.000261757 16.3186V30.635C0.000261757 31.7954 0.461198 32.9082 1.28167 33.7286C2.10214 34.5491 3.21494 35.01 4.37526 35.01H30.6253C31.7856 35.01 32.8984 34.5491 33.7189 33.7286C34.5393 32.9082 35.0003 31.7954 35.0003 30.635V16.3186C35.0019 15.7438 34.8894 15.1745 34.6694 14.6435C34.4494 14.1126 34.1261 13.6306 33.7184 13.2255V13.2255ZM21.8753 32.0934H13.1253V26.3563C13.1253 25.196 13.5862 24.0832 14.4067 23.2627C15.2271 22.4422 16.3399 21.9813 17.5003 21.9813C18.6606 21.9813 19.7734 22.4422 20.5939 23.2627C21.4143 24.0832 21.8753 25.196 21.8753 26.3563V32.0934ZM32.0836 30.635C32.0836 31.0218 31.93 31.3928 31.6565 31.6662C31.383 31.9397 31.012 32.0934 30.6253 32.0934H24.7919V26.3563C24.7919 24.4224 24.0237 22.5678 22.6563 21.2003C21.2888 19.8329 19.4341 19.0646 17.5003 19.0646C15.5664 19.0646 13.7117 19.8329 12.3443 21.2003C10.9768 22.5678 10.2086 24.4224 10.2086 26.3563V32.0934H4.37526C3.98849 32.0934 3.61756 31.9397 3.34407 31.6662C3.07057 31.3928 2.91693 31.0218 2.91693 30.635V16.3186C2.91828 15.9321 3.07179 15.5617 3.34422 15.2875L14.4057 4.229C15.2277 3.41077 16.3404 2.95142 17.5003 2.95142C18.6601 2.95142 19.7728 3.41077 20.5948 4.229L31.6563 15.2919C31.9277 15.565 32.0811 15.9336 32.0836 16.3186V30.635Z" />
+        </g>
+        <defs>
+            <clipPath id="clip0_24_165">
+                <rect width="35" height="35" fill="white"/>
+            </clipPath>
+        </defs>
+    </symbol>
+
+
+</svg>
+
+<script src="js/jquery.js"></script>
+<script type="text/javascript" src="js/slick.js"></script>
+<script src="js/jquery.touchSwipe.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
