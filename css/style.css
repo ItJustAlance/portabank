@@ -411,6 +411,18 @@ body {font-family: 'Gilroy'; background: #f3f4f6; color: #060606; font-size: 14r
     width: 85rem;
     height: 85rem;
 }
+
+.header__search-modal {padding: 16rem 32rem; display: none; position: absolute;top: 0;left: 0; width: 100vw; background: #f3f4f6;}
+.header__search-modal .b-row-input {flex: 1 1 auto; position: relative; padding: 0 16rem 0 62rem; background: #fff; height: 42rem; border-radius: 10rem; }
+.header__search-modal .ic-search__input {position: absolute; width: 26rem; height: 26rem; left: 18rem; top: calc(50% - 13rem)}
+
+.header__search-modal .input__input { height: 42rem; width: 100%}
+.header__search-modal .b-btn {padding-left: 20px; display: flex; align-items: center}
+.header__search-modal .btn-reset-search {background: none; border: none; cursor: pointer; color: #060606; font-size: 14rem; font-weight: 500;}
+.header__search-modal .input__input {background: #fff; border: none; color: #ADADAD; font-size: 14rem;font-weight: 500;}
+
+.search-open .header__search-modal { display: flex}
+
 .header__push {width: 24rem; position: relative; margin-right: 40rem;}
 .header__push .icon { width: 24rem;height: 24rem;}
 .header__push.active:after {width: 7rem;height: 7rem; background: #FB4A28; border-radius: 50%; position: absolute;top: 0;right: 0;z-index: 1;content: ""}
@@ -431,6 +443,7 @@ div.content {background: #fff; border-radius: 10rem 10rem 0 0; padding: 19rem 32
 .h2-title {font-size: 25rem; margin: 0; padding: 0 0 20rem; font-weight: 700;}
 .h2-title.--center { text-align: center;}
 .h4-title {font-size: 14rem; margin: 0; padding: 0 0 10rem; font-weight: 500;}
+.h4-title--gray {color: #ADADAD;}
 .info-box {padding: 0 0 20rem;}
 .row-option-title { display: flex; padding-bottom: 20px; color: #ADADAD;}
 .row-option-title .col-title { font-weight: 700;}
@@ -487,6 +500,8 @@ div.content {background: #fff; border-radius: 10rem 10rem 0 0; padding: 19rem 32
 .card-bank__bottom { display: flex; overflow: hidden; flex-wrap: wrap;height: 44rem; align-items: center}
 .card-bank__bottom .title { margin-right: auto; margin-bottom: 5rem;}
 .card-bank__bottom .cash { margin-bottom: 5rem;}
+
+.card-bank__bottom .bottom-right-check {margin-left: auto}
 
 .card-bank--small { display: flex; flex-direction: column; height: 27vw;}
 .card-bank--small .bank-name {color: #ADADAD; font-size: 14rem; text-align: center; font-weight: 400; margin: 0 0 auto;}
@@ -549,7 +564,23 @@ div.content {background: #fff; border-radius: 10rem 10rem 0 0; padding: 19rem 32
 
 .b-modal-form {}
 .b-modal-form__form {padding-bottom: 42rem;}
+
+
+.b-modal-browse-files {}
+.b-modal-browse-files .b-modal-wrapper {background: none;}
+.b-modal-browse-files .btns-browse {
+    background: #FFFFFF;
+    box-shadow: -7px 7px 14px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10rem;
+    margin-bottom: 20rem;
+    padding: 0 40rem;
+}
+.b-modal-browse-files .btns-browse .b-btn {}
+.b-modal-browse-files .btns-browse .b-btn .btn-inline {background: none; border: none; display: inline-block; vertical-align: top; padding: 27rem 10rem; text-align: center; color: #060606; text-decoration: none; width: 100%;}
+.b-modal-browse-files .btns-browse .b-btn+.b-btn {border-top: 1rem solid #ADADAD;}
+
 .form-row {margin-bottom: 16rem; position: relative;}
+.form-row--big {margin-bottom: 42rem;}
 .form-row .input {background: none; border: none; border-bottom: 1rem solid #ADADAD; font-size: 25rem; font-weight: 500; width: 100%; padding-bottom: 5rem;}
 .form-row .input::placeholder {color: #ADADAD;}
 .form-row .b-input-label {color: #ADADAD; font-size: 14rem; margin-bottom: 3rem; padding-top: 4rem; font-weight: 500;}
@@ -582,7 +613,9 @@ div.content {background: #fff; border-radius: 10rem 10rem 0 0; padding: 19rem 32
 .horizont-checked__checked {width: 14rem;height: 14rem;background: #FB4D2B; border-radius: 50%; display: block; position: absolute; left: calc(100% - 17rem); top: 3rem; transition: all 0.5s ease;}
 .horizont-checked__input:checked ~ .horizont-checked__checked { left: 5rem;background: #40B769}
 
-
+.horizont-checked--white {border-color: #fff;}
+.horizont-checked--white .horizont-checked__checked {background: #fff;}
+.horizont-checked--white .horizont-checked__input:checked ~ .horizont-checked__checked {background: #fff;}
 
 .inp-checked { display: inline-flex; position: relative; cursor: pointer;}
 .inp-checked__checked { position: absolute;top: 0;left: 0; border: 3rem solid #060606; border-radius: 3rem; width: 24rem; height: 24rem;}
@@ -739,7 +772,7 @@ body.lock { overflow: hidden;}
 .b-chat .chat__chat {flex: 1 1 auto;}
 .b-chat .chat-bottom {padding-bottom: 20rem;}
 
-.chat-bottom { display: flex; align-items: center;padding: 0;}
+.chat-bottom { display: flex; align-items: center;padding: 0; position: relative}
 .chat-bottom .chat-file {width: 24rem;height: 24rem; margin-right: 20rem; overflow: hidden; position: relative;}
 .chat-bottom .chat-file input {font-size: 100rem; width: 100vw; height: 100vw; opacity: 0; z-index: 1; position: absolute;top: 0; left: 0;}
 .chat-bottom .chat-file-icon {}
@@ -752,6 +785,18 @@ body.lock { overflow: hidden;}
 .chat-bottom .chat-btn-send {border:none; background: none;}
 .chat-bottom .chat-btn-send svg {width: 24rem;height: 24rem;}
 
+.chat-bottom .search-result-row {background: #fff; padding: 0 33rem; position: absolute; top: 0; left: -33rem; width: 100vw; height: 42rem; display: none;}
+.search-open .chat-bottom .search-result-row { display: block;}
+.chat-bottom .search-result-row__wrapper {background: #F5F5F5; border-radius: 10rem; display: flex; align-items: center; height: 42rem;}
+.chat-bottom .search-result__text { padding: 0 40rem; flex: 1 1 auto; font-size: 14rem;color: #ADADAD; font-weight: 500;}
+.chat-bottom .search-result__arrows { display: flex; padding-right: 12rem;}
+.chat-bottom .search-result__arrows .arr-up,
+.chat-bottom .search-result__arrows .arr-down {width: 27rem;height: 24rem; margin: 0 1rem; border: none; background: none;}
+.chat-bottom .search-result__arrows .arr-up .icon,
+.chat-bottom .search-result__arrows .arr-down .icon {width: 24rem; height: 24rem; fill: #ADADAD;}
+
+.chat-bottom .btn-chat-file {width: 24rem;height: 24rem; margin-right: 20rem; overflow: hidden; position: relative;}
+.chat-bottom .btn-chat-file-icon svg {width: 24rem; height: 24rem;}
 
 .chat__chat { overflow: hidden; max-height: calc(100vh - 30rem); padding-bottom: 20rem;}
 .chat__chat-wrapper { overflow: auto; padding-bottom: 10rem; max-height: calc(100vh - 190rem);}
@@ -1095,4 +1140,18 @@ html, body {height: -webkit-fill-available; min-height:calc(100vh - 35px)}
 .b-tabs .box { display: none}
 .b-tabs .box.active { display: block}
 
+
+.b-modal-form__form.hidden { display: none}
+
+.view-type2 { display: none;}
+.view-type1 {display: block}
+.show-otpravka-form-type2 .view-type1 {display: none}
+.show-otpravka-form-type2 .view-type2 {display: block}
+
+.btn-swipe-send {background: #ADADAD; box-shadow: -7px 7px 14px rgba(0, 0, 0, 0.25); border-radius: 10rem; position: relative; height: 68rem; display: flex; overflow: hidden;}
+.btn-swipe-send .btn-swipe-send-wrapper { position: absolute; min-width: 93rem; display: flex; align-items: center; justify-content: flex-end; padding-right: 20rem;z-index: 1; height: 100%; border-radius: 10rem; background: #000; max-width: 100%;}
+.btn-swipe-send .btn-swipe-send-label { text-align: right; display: flex; align-items: center; justify-content: flex-end; color: #fff; font-size: 25rem; font-weight: 500; padding: 0 20rem; width: 100%;}
+.btn-swipe-send .ic-btn-swipe {width: 35rem; height: 35rem;}
+
+.btn-swipe-send.finish .btn-swipe-send-wrapper { width: 100%;}
 

@@ -337,7 +337,7 @@
                     <use xlink:href="#menu-i2"></use>
                 </svg>
             </a></li>
-            <li><a href="login2.html">
+            <li><a href="#" class="js-btn-modal" data-modal="modal-otpravka">
                 <svg class="icon icon-big">
                     <use xlink:href="#menu-i3"></use>
                 </svg>
@@ -354,6 +354,146 @@
             </a></li>
         </ul>
     </nav>
+    <div class="has-modal b-modal" id="modal-otpravka">
+        <div class="b-modal-wrapper">
+            <div class="b-modal-touch js-modal-touch"><span class="b-modal-touch__swiper"></span></div>
+            <div class="b-modal-content">
+                <div class="slider-cards slider-cards--one">
+                    <div class="b-slider js-slider-card-one">
+                        <div class="slide">
+                            <div class="card-bank card-bank--small">
+                                <div class="bank-name">GRAME</div>
+                                <div class="card-bank__bottom">
+                                    <div class="bottom-left">
+                                        <div class="val1">52 700 GRM</div>
+                                        <div class="val2">100 000 ₽</div>
+                                    </div>
+                                    <div class="bottom-right-check">
+                                        <div class="horizont-checked horizont-checked--white js-toggle-otpr-view-wrapper" >
+                                            <label for="id11511" class="label js-toggle-otpr-view__btn"></label>
+                                            <input id="id11511" class="horizont-checked__input js-toggle-otpr-view__checked" type="checkbox">
+                                            <span class="horizont-checked__checked"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="card-bank card-bank--small">
+                                <div class="bank-name">GRAME</div>
+                                <div class="card-bank__bottom">
+                                    <div class="bottom-left">
+                                        <div class="val1">52 700 GRM</div>
+                                        <div class="val2">100 000 ₽</div>
+                                    </div>
+                                    <div class="bottom-right-check">
+                                        <div class="horizont-checked horizont-checked--white js-toggle-otpr-view-wrapper" >
+                                            <label for="id11511a" class="label js-toggle-otpr-view__btn"></label>
+                                            <input id="id11511a" class="horizont-checked__input js-toggle-otpr-view__checked" type="checkbox">
+                                            <span class="horizont-checked__checked"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="card-bank card-bank--small">
+                                <div class="bank-name">GRAME</div>
+                                <div class="card-bank__bottom">
+                                    <div class="bottom-left">
+                                        <div class="val1">52 700 GRM</div>
+                                        <div class="val2">100 000 ₽</div>
+                                    </div>
+                                    <div class="bottom-right-check">
+                                        <div class="horizont-checked horizont-checked--white js-toggle-otpr-view-wrapper" >
+                                            <label for="id115121" class="label js-toggle-otpr-view__btn"></label>
+                                            <input id="id115121" class="horizont-checked__input js-toggle-otpr-view__checked" type="checkbox">
+                                            <span class="horizont-checked__checked"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--end slider-cards -->
+                <div class="h2-title">Отправка</div>
+                <div class="b-modal-form">
+                    <div class="b-modal-form__form view-type1">
+                        <div class="h4-title h4-title--gray">Максим Яценко:</div>
+                        <div class="form-row form-row--big">
+                            <div class="b-input"><input type="text" placeholder="Номер телефона" class="input"></div>
+                        </div>
+                        <div class="h4-title h4-title--gray">0.00 ₽</div>
+                        <div class="form-row form-row--big form-row--icon js-swap-placeholder__wrapper">
+                            <div class="b-input"><input type="text" placeholder="USDT" class="input js-swap-placeholder__input"></div>
+                            <div class="input-icon">
+                                <div class="vert-checked">
+                                    <label for="id12" class="label js-swap-placeholder__btn" data-on="GRM" data-off="USTD"></label>
+                                    <input id="id12" class="vert-checked__input js-swap-placeholder__checked" type="checkbox">
+                                    <span class="vert-checked__checked"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="h4-title h4-title--gray">Комиссия составит 672 GRM</div>
+                        </div>
+                    </div><!--end b-modal-form__form js-view-type1 -->
+                    
+                    <div class="b-modal-form__form view-type2">
+                        <div class="h4-title h4-title--gray">&nbsp;</div>
+                        <div class="form-row form-row--big form-row--icon">
+                            <div class="b-input"><input type="text" placeholder="Адрес получателя" class="input"></div>
+                            <div class="input-icon">
+                                <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M30.2812 24.9375H25.5312C25.2033 24.9375 24.9375 25.2033 24.9375 25.5312V30.2812C24.9375 30.6092 25.2033 30.875 25.5312 30.875H30.2812C30.6092 30.875 30.875 30.6092 30.875 30.2812V25.5312C30.875 25.2033 30.6092 24.9375 30.2812 24.9375Z" fill="black"/>
+                                    <path d="M24.3438 20.1875H20.7812C20.4533 20.1875 20.1875 20.4533 20.1875 20.7812V24.3438C20.1875 24.6717 20.4533 24.9375 20.7812 24.9375H24.3438C24.6717 24.9375 24.9375 24.6717 24.9375 24.3438V20.7812C24.9375 20.4533 24.6717 20.1875 24.3438 20.1875Z" fill="black"/>
+                                    <path d="M35.0312 30.875H31.4688C31.1408 30.875 30.875 31.1408 30.875 31.4688V35.0312C30.875 35.3592 31.1408 35.625 31.4688 35.625H35.0312C35.3592 35.625 35.625 35.3592 35.625 35.0312V31.4688C35.625 31.1408 35.3592 30.875 35.0312 30.875Z" fill="black"/>
+                                    <path d="M35.0312 20.1875H32.6562C32.3283 20.1875 32.0625 20.4533 32.0625 20.7812V23.1562C32.0625 23.4842 32.3283 23.75 32.6562 23.75H35.0312C35.3592 23.75 35.625 23.4842 35.625 23.1562V20.7812C35.625 20.4533 35.3592 20.1875 35.0312 20.1875Z" fill="black"/>
+                                    <path d="M23.1562 32.0625H20.7812C20.4533 32.0625 20.1875 32.3283 20.1875 32.6562V35.0312C20.1875 35.3592 20.4533 35.625 20.7812 35.625H23.1562C23.4842 35.625 23.75 35.3592 23.75 35.0312V32.6562C23.75 32.3283 23.4842 32.0625 23.1562 32.0625Z" fill="black"/>
+                                    <path d="M33.25 2.375H22.5625C21.9326 2.375 21.3285 2.62522 20.8831 3.07062C20.4377 3.51602 20.1875 4.12011 20.1875 4.75V15.4375C20.1875 16.0674 20.4377 16.6715 20.8831 17.1169C21.3285 17.5623 21.9326 17.8125 22.5625 17.8125H33.25C33.8799 17.8125 34.484 17.5623 34.9294 17.1169C35.3748 16.6715 35.625 16.0674 35.625 15.4375V4.75C35.625 4.12011 35.3748 3.51602 34.9294 3.07062C34.484 2.62522 33.8799 2.375 33.25 2.375ZM30.875 12.4688C30.875 12.6262 30.8124 12.7772 30.7011 12.8886C30.5897 12.9999 30.4387 13.0625 30.2812 13.0625H25.5312C25.3738 13.0625 25.2228 12.9999 25.1114 12.8886C25.0001 12.7772 24.9375 12.6262 24.9375 12.4688V7.71875C24.9375 7.56128 25.0001 7.41025 25.1114 7.29891C25.2228 7.18756 25.3738 7.125 25.5312 7.125H30.2812C30.4387 7.125 30.5897 7.18756 30.7011 7.29891C30.8124 7.41025 30.875 7.56128 30.875 7.71875V12.4688Z" fill="black"/>
+                                    <path d="M15.4375 2.375H4.75C4.12011 2.375 3.51602 2.62522 3.07062 3.07062C2.62522 3.51602 2.375 4.12011 2.375 4.75V15.4375C2.375 16.0674 2.62522 16.6715 3.07062 17.1169C3.51602 17.5623 4.12011 17.8125 4.75 17.8125H15.4375C16.0674 17.8125 16.6715 17.5623 17.1169 17.1169C17.5623 16.6715 17.8125 16.0674 17.8125 15.4375V4.75C17.8125 4.12011 17.5623 3.51602 17.1169 3.07062C16.6715 2.62522 16.0674 2.375 15.4375 2.375ZM13.0625 12.4688C13.0625 12.6262 12.9999 12.7772 12.8886 12.8886C12.7772 12.9999 12.6262 13.0625 12.4688 13.0625H7.71875C7.56128 13.0625 7.41025 12.9999 7.29891 12.8886C7.18756 12.7772 7.125 12.6262 7.125 12.4688V7.71875C7.125 7.56128 7.18756 7.41025 7.29891 7.29891C7.41025 7.18756 7.56128 7.125 7.71875 7.125H12.4688C12.6262 7.125 12.7772 7.18756 12.8886 7.29891C12.9999 7.41025 13.0625 7.56128 13.0625 7.71875V12.4688Z" fill="black"/>
+                                    <path d="M15.4375 20.1875H4.75C4.12011 20.1875 3.51602 20.4377 3.07062 20.8831C2.62522 21.3285 2.375 21.9326 2.375 22.5625V33.25C2.375 33.8799 2.62522 34.484 3.07062 34.9294C3.51602 35.3748 4.12011 35.625 4.75 35.625H15.4375C16.0674 35.625 16.6715 35.3748 17.1169 34.9294C17.5623 34.484 17.8125 33.8799 17.8125 33.25V22.5625C17.8125 21.9326 17.5623 21.3285 17.1169 20.8831C16.6715 20.4377 16.0674 20.1875 15.4375 20.1875ZM13.0625 30.2812C13.0625 30.4387 12.9999 30.5897 12.8886 30.7011C12.7772 30.8124 12.6262 30.875 12.4688 30.875H7.71875C7.56128 30.875 7.41025 30.8124 7.29891 30.7011C7.18756 30.5897 7.125 30.4387 7.125 30.2812V25.5312C7.125 25.3738 7.18756 25.2228 7.29891 25.1114C7.41025 25.0001 7.56128 24.9375 7.71875 24.9375H12.4688C12.6262 24.9375 12.7772 25.0001 12.8886 25.1114C12.9999 25.2228 13.0625 25.3738 13.0625 25.5312V30.2812Z" fill="black"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="h4-title h4-title--gray">0.00 ₽</div>
+                        <div class="form-row form-row--big form-row--icon js-swap-placeholder__wrapper">
+                            <div class="b-input"><input type="text" placeholder="USDT" class="input js-swap-placeholder__input"></div>
+                            <div class="input-icon">
+                                <div class="vert-checked">
+                                    <label for="id12" class="label js-swap-placeholder__btn" data-on="GRM" data-off="USTD"></label>
+                                    <input id="id12" class="vert-checked__input js-swap-placeholder__checked" type="checkbox">
+                                    <span class="vert-checked__checked"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="h4-title h4-title--gray">Комиссия составит 672 GRM</div>
+                        </div>
+                    </div><!--end b-modal-form__form js-view-type2 -->
+                    
+                    <div class="form-row">
+                        <div class="btn-swipe-send">
+                            <div class="btn-swipe-send-wrapper js-btn-swipe-send">
+                                <svg class="ic-btn-swipe" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_68_233)">
+                                        <path d="M47.6112 24.7145C47.6156 23.9716 47.4285 23.2402 47.0677 22.5908C46.7069 21.9414 46.1848 21.3961 45.5517 21.0075L25.606 8.00204C24.527 7.18335 23.2409 6.68215 21.8926 6.55488C20.5442 6.42761 19.187 6.67933 17.974 7.28168C16.7609 7.88404 15.7401 8.81311 15.0265 9.96427C14.313 11.1154 13.9349 12.4429 13.9351 13.7973L13.9361 17.3344C13.9361 17.5259 13.8984 17.7155 13.8251 17.8924C13.7517 18.0692 13.6443 18.2299 13.5088 18.3652L10.2466 21.6273C9.7902 22.0883 9.44352 22.6461 9.23232 23.2595L9.21687 23.2584L9.21687 23.312C8.91195 24.2203 8.91412 25.2038 9.22305 26.1108L9.22305 26.1643L9.23849 26.1633C9.4497 26.7766 9.79638 27.3345 10.2528 27.7954L13.5149 31.0576C13.7881 31.3303 13.9418 31.7003 13.9423 32.0863L13.9423 35.6223C13.937 36.576 14.1206 37.5213 14.4823 38.4037C14.8441 39.2861 15.3769 40.0882 16.0501 40.7637C16.6128 41.325 17.2627 41.7914 17.9747 42.1446C19.1694 42.7487 20.5092 43.0069 21.8429 42.8901C23.1765 42.7733 24.451 42.2861 25.5226 41.4835L45.5095 28.4472C46.1533 28.0605 46.6855 27.5132 47.054 26.8588C47.4224 26.2044 47.6144 25.4654 47.6112 24.7145ZM16.8482 17.3385L16.8461 13.8004C16.8362 12.986 17.0588 12.1856 17.4877 11.4933C17.9167 10.8009 18.5343 10.2453 19.268 9.89158C20.01 9.51802 20.8437 9.36542 21.6699 9.45195C22.4961 9.53848 23.28 9.86048 23.9285 10.3797L43.6745 23.2574L12.7293 23.2595L15.5661 20.4226C15.9731 20.0188 16.2959 19.5383 16.5159 19.0089C16.736 18.4796 16.8489 17.9118 16.8482 17.3385ZM23.8513 39.1079C23.2035 39.5976 22.432 39.8971 21.6235 39.9726C20.8149 40.0482 20.0013 39.8969 19.274 39.5358C18.5466 39.1746 17.9343 38.6179 17.5058 37.9281C17.0773 37.2382 16.8496 36.4426 16.8482 35.6306L16.8482 32.0883C16.8497 31.515 16.7376 30.947 16.5182 30.4173C16.2989 29.8876 15.9767 29.4066 15.5703 29.0022L12.7334 26.1653L43.6756 26.1705L23.8513 39.1079Z" fill="white"/>
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_68_233">
+                                            <rect width="34.95" height="34.95" fill="white" transform="translate(24.7134) rotate(45)"/>
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            
+                            </div>
+                            <div class="btn-swipe-send-label">Отправить</div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- /.b-modal-content -->
+        </div><!-- /.b-modal-wrapper -->
+    </div><!-- /.b-modal -->
     <div class="has-modal b-modal" id="modal-popol">
         <div class="b-modal-wrapper">
             <div class="b-modal-touch js-modal-touch"><span class="b-modal-touch__swiper"></span></div>

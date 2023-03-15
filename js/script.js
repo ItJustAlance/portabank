@@ -86,6 +86,11 @@ $(function() {
     
     return false
   });
+  $(".js-modal-close").on("click", function() {
+    $(".popup").removeClass("in");
+    $(".b-modal").removeClass("open");
+    return false
+  });
   $(".js-popup-close").on("click", function() {
     $(".popup").removeClass("in");
     $("body").removeClass("lock");
@@ -186,6 +191,66 @@ $(function() {
       .parents('.js-tabs-wrapper').find('.js-tab-box').eq($(this).index()).fadeIn(0).siblings('.js-tab-box').fadeOut(0);
   })
   
+  $(".js-btn-open-search").on("click", function() {
+    $("body").addClass("search-open");
+  });
+  $(".js-btn-reset-search").on("click", function() {
+    $("body").removeClass("search-open");
+  });
+  $(".js-toggle-otpr-view__btn").on("click", function() {
+    console.log('dddd')
+    let wrapper = $(this).closest(".js-toggle-otpr-view-wrapper");
+    if(wrapper.find('.js-toggle-otpr-view__checked').is(':checked')) {
+      $('body').removeClass('show-otpravka-form-type2');
+    } else {
+      $('body').addClass('show-otpravka-form-type2');
+    }
+  });
+  
+  
+  $(".js-btn-swipe-send").swipe({
+    
+    swipeStatus: function (event, phase, direction, distance, duration, fingerCount) {
+      var btn_width = $(".btn-swipe-send").width();
+      console.log("swiped " + distance + ' px');
+      
+      $(".btn-swipe-send").addClass("drag");
+      $(".btn-swipe-send-wrapper").css({width : distance +"px"})
+      console.log(direction);
+      if (distance >= btn_width - 50 && direction == 'right') {
+        console.log('!!!!!!')
+        $(".btn-swipe-send").removeClass("drag");
+        $(".btn-swipe-send").addClass("finish");
+      
+      }
+      if (phase === $.fn.swipe.phases.PHASE_END || phase === $.fn.swipe.phases.PHASE_CANCEL) {
+        //The handlers below fire after the status,
+        // so we can change the text here, and it will be replaced if the handlers below fire
+        //$(this).find('#swipe_text').text("No swipe was made");
+      }
+    },
+    pinchStatus: function (event, phase, direction, distance, duration, fingerCount, pinchZoom) {
+      //$(this).find('#pinch_text').text("pinched " + distance + " px ");
+      if (phase === $.fn.swipe.phases.PHASE_END || phase === $.fn.swipe.phases.PHASE_CANCEL) {
+        //The handlers below fire after the status,
+        // so we can change the text here, and it will be replaced if the handlers below fire
+        //$(this).find('#pinch_text').text("No pinch was made");
+      }
+    },
+    swipe: function (event, direction, distance, duration, fingerCount) {
+      console.log("You swiped " + direction + " with " + fingerCount + " fingers");
+      $(".btn-swipe-send").removeClass("drag");
+
+      
+    },
+    pinchIn: function (event, direction, distance, duration, fingerCount, pinchZoom) {
+     // $(this).find('#pinch_text').text("You pinched " + direction + " by " + distance + "px, zoom scale is " + pinchZoom);
+    },
+    pinchOut: function (event, direction, distance, duration, fingerCount, pinchZoom) {
+     // $(this).find('#pinch_text').text("You pinched " + direction + " by " + distance + "px, zoom scale is " + pinchZoom);
+    },
+    fingers: $.fn.swipe.fingers.ALL
+  });
 });
 
 
