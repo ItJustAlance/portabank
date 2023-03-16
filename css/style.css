@@ -765,7 +765,7 @@ body.lock { overflow: hidden;}
 .info-tabs { display: flex; padding-bottom: 40rem;}
 .info-tab__item {width: 33.333%; text-align: center; font-size: 14rem; padding: 0 3rem;}
 .info-tab__link { text-decoration: none;color: #060606; display: inline-block; vertical-align: top;padding: 5rem 7rem;}
-.info-tab__link.active {background: #F3F4F6; border-radius: 10rem;}
+.info-tab__item.active .info-tab__link {background: #F3F4F6; border-radius: 10rem;}
 
 
 .b-chat { display: flex; flex-direction: column; flex: 1 1 auto;}
@@ -1149,7 +1149,7 @@ html, body {height: -webkit-fill-available; min-height:calc(100vh - 35px)}
 .show-otpravka-form-type2 .view-type2 {display: block}
 
 .btn-swipe-send {background: #ADADAD; box-shadow: -7px 7px 14px rgba(0, 0, 0, 0.25); border-radius: 10rem; position: relative; height: 68rem; display: flex; overflow: hidden;}
-.btn-swipe-send .btn-swipe-send-wrapper { position: absolute; min-width: 93rem; display: flex; align-items: center; justify-content: flex-end; padding-right: 20rem;z-index: 1; height: 100%; border-radius: 10rem; background: #000; max-width: 100%;}
+.btn-swipe-send .btn-swipe-send-wrapper { position: absolute; min-width: 93rem; display: flex; align-items: center; justify-content: flex-end; padding-right: 30rem;z-index: 1; height: 100%; border-radius: 10rem; background: #000; max-width: 100%;}
 .btn-swipe-send .btn-swipe-send-label { text-align: right; display: flex; align-items: center; justify-content: flex-end; color: #fff; font-size: 25rem; font-weight: 500; padding: 0 20rem; width: 100%;}
 .btn-swipe-send .ic-btn-swipe {width: 35rem; height: 35rem;}
 

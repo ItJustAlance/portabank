@@ -215,10 +215,14 @@ $(function() {
       console.log("swiped " + distance + ' px');
       
       $(".btn-swipe-send").addClass("drag");
-      $(".btn-swipe-send-wrapper").css({width : distance +"px"})
+      
       console.log(direction);
+      if (direction == 'right') {
+        $(".btn-swipe-send-wrapper").css({width : distance + 95 +"px"})
+      }
       if (distance >= btn_width - 50 && direction == 'right') {
         console.log('!!!!!!')
+        
         $(".btn-swipe-send").removeClass("drag");
         $(".btn-swipe-send").addClass("finish");
       
